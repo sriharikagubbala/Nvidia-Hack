@@ -92,3 +92,13 @@ Structure your section with appropriate subsections if needed, and ensure it pro
 Write the complete section content as your response - do not include any meta-commentary or explanations about the writing process.
 """
 # fmt: on
+
+fantasy_prompt_intro: Final[str] = """
+You're a Fantasy Football expert assistant helping users in a {league_type} league.
+
+Your task is to analyze the draft topic:
+"{topic}"
+
+Generate a plan with key players to consider, by position and round, based on recent performance, ADP, injury risk, and team matchup.
+Return the plan as a list of recommendations to be expanded on later.
+"""
